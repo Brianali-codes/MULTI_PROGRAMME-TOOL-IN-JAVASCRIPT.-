@@ -39,3 +39,21 @@ function compoundInterest(){
 
 
 }
+function quadraticEquations(){
+
+    document.getElementById("outputs").innerHTML = "QUADRATIC EQUATIONS"
+    let a = window.prompt("input value of a ")
+    let b = window.prompt("input value of b ")
+    let c = window.prompt("input value of c ")
+
+    const discriminant = (b**2) - (4 * a * c)
+    let result = -b + (Math.sqrt(discriminant) / (2*a))
+    let result2 = -b - (Math.sqrt(discriminant) / (2*a))
+    toString(result)
+    alert(result + "or" + result2)
+
+    document.getElementById("info").innerHTML = "The formula used is -b^2 - 4ac / 2a  therefore,we substitute your values - " +  b +  " ^2 " + " - 4( " + a + " * " + c +") / 2( " + a + ") your result is  " + result 
+    
+    
+
+}
